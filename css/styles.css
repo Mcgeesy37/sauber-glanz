@@ -92,12 +92,10 @@ header.scrolled{box-shadow:0 10px 30px -16px rgba(7,26,51,.25)}
   .nav-cta .btn{display:none}
 }
 
-/* ---------- Hero (Bild in voller Farbe, kein blaues Overlay) ---------- */
+/* ---------- Hero (Bild komplett unbearbeitet) ---------- */
 .hero{position:relative;color:#fff;overflow:hidden;
-  background:
-    linear-gradient(90deg,rgba(0,0,0,.45) 0%,rgba(0,0,0,.15) 45%,rgba(0,0,0,0) 75%),
-    url('../images/hero.jpg') center/cover no-repeat,
-    #0C2D5C}
+  background:url('../images/hero.jpg') center/cover no-repeat,#0C2D5C}
+
 
 
 /* Hero visual card */
