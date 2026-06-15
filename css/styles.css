@@ -92,32 +92,13 @@ header.scrolled{box-shadow:0 10px 30px -16px rgba(7,26,51,.25)}
   .nav-cta .btn{display:none}
 }
 
-/* ---------- Hero (mit Hintergrundbild images/hero.jpg) ---------- */
+/* ---------- Hero (Bild in voller Farbe, kein blaues Overlay) ---------- */
 .hero{position:relative;color:#fff;overflow:hidden;
   background:
-    linear-gradient(150deg,rgba(7,26,51,.94) 0%,rgba(12,45,92,.88) 48%,rgba(17,72,143,.82) 100%),
+    linear-gradient(90deg,rgba(0,0,0,.45) 0%,rgba(0,0,0,.15) 45%,rgba(0,0,0,0) 75%),
     url('../images/hero.jpg') center/cover no-repeat,
-    linear-gradient(150deg,#071A33 0%,#0C2D5C 48%,#11488F 100%)}
-.hero::before{content:"";position:absolute;inset:0;background:
-  radial-gradient(900px 480px at 85% 10%,rgba(77,163,255,.22),transparent 60%),
-  radial-gradient(700px 420px at 8% 90%,rgba(53,194,224,.14),transparent 60%)}
-.hero-streak{position:absolute;top:-20%;height:140%;width:140px;background:linear-gradient(180deg,transparent,rgba(255,255,255,.05) 30%,rgba(255,255,255,.1) 50%,rgba(255,255,255,.05) 70%,transparent);transform:rotate(18deg);pointer-events:none}
-.hero-streak.s1{left:55%}
-.hero-streak.s2{left:72%;width:70px;opacity:.7}
-.hero-streak.s3{left:86%;width:40px;opacity:.5}
-.hero-inner{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center;padding:110px 0 130px}
-.hero .eyebrow{color:var(--cyan)}
-.hero .eyebrow::before{background:linear-gradient(90deg,#fff,var(--cyan))}
-.hero h1{font-size:clamp(40px,5.6vw,66px);font-weight:800;letter-spacing:-.025em;color:#fff;margin:18px 0 22px}
-.glanz{position:relative;display:inline-block;background:linear-gradient(110deg,#9CC8FF 0%,#FFFFFF 25%,#7FE3F2 50%,#FFFFFF 75%,#9CC8FF 100%);background-size:240% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:glanzsweep 5s linear infinite}
-@keyframes glanzsweep{to{background-position:-240% center}}
-.hero p.lead{font-size:18.5px;color:#C9DCF5;max-width:540px;margin-bottom:36px}
-.hero-actions{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:54px}
-.hero-trust{display:flex;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.15);padding-top:30px}
-.trust-item{padding-right:38px;margin-right:38px;border-right:1px solid rgba(255,255,255,.15)}
-.trust-item:last-child{border-right:none;margin-right:0;padding-right:0}
-.trust-item b{display:block;font-family:var(--font-d);font-size:30px;font-weight:800;color:#fff;letter-spacing:-.02em}
-.trust-item span{font-size:13.5px;color:#9FBBDE}
+    #0C2D5C}
+
 
 /* Hero visual card */
 .hero-card{position:relative;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);border-radius:26px;backdrop-filter:blur(14px);padding:34px;box-shadow:0 30px 80px -20px rgba(0,0,0,.45)}
